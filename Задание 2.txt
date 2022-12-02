@@ -1,0 +1,8 @@
+Задание 2.
+
+SELECT public.products.name, public.categories.name
+FROM public.products
+LEFT JOIN public.productcategories
+	ON public.products.id = public.productcategories.product_id
+LEFT JOIN public.categories
+	ON public.categories.id = public.productcategories.category_id
